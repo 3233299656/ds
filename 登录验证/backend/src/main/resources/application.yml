@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+
+spring:
+  application:
+    name: shop-backend
+  datasource:
+    url: jdbc:sqlite:./data/shop.db
+    driver-class-name: org.sqlite.JDBC
+    username: admin
+    password: admin
+
+shop:
+  jwt:
+    secret: c2hvcC1hcGktand0LXNlY3JldC1rZXktZm9yLWRlbW8tcHVycG9zZS1hYmNkZWZnaGlqazEyMzQ1Ng==
+    expire-seconds: 86400
+    issuer: shop-backend
